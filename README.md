@@ -1,4 +1,4 @@
-Intelligens Redőnyvezérlő – Projekt Összefoglaló (Tinkercad demonstráció)
+#Intelligens Redőnyvezérlő – Projekt Összefoglaló (Tinkercad demonstráció)
 
 
 1. A projekt célja
