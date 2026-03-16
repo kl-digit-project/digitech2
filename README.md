@@ -21,13 +21,12 @@ Az alkatrészek piacának jelenlegi szereplői közül választottam a számomra
   + A többi számomra hasznossal összehasonlítva, mint például az Arduino UNO R4 WiFi, Arduino Nano, ESP8266 NodeMCU, Arduino Mega 2560, olcsóbb, gyorsabb, van Wi‑Fi, sok az analóg bemenete. 2
 * **Fényérzékelés**: BH1750 szenzor
   + MAX44009 és a BH1750 között gondolkodtam, és igazából nem kell a BH1750-nél jobb ehhez a projekthez nekem, szóval az ára miatt is elég a BH1750. Ha esetleg piaci célra kiterjeszteném, akkor ott szóba jöhet egy még pontosabb/érzékenyebb mérőeszköz vagy ha a BH1750 nem találom megfelelőnek.
-
 *	**Besütési szög érzékelése**: kétfajta opció létezik: szenzoros vagy szoftveres, én a szenzort választom ebben az esetben.
   + LDR eltérő szögben. Olcsó, egyszerű, és a beesési szög logikához bőven elég információt ad.
-
 * **Redőnymotor vezérlés**: 2 csatornás relé modul
   + Olcsó, egyszerű, pont erre való – fel/le vezérléshez tökéletes.
-*	**Időzítés**: az ESP32 eléri a pontos internet időt. Ez bőven elég.
+*	**Időzítés**: az ESP32 eléri a pontos internet időt.
+  + Ez bőven elég.
 
 ### Összegezve: 
 
