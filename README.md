@@ -1,5 +1,40 @@
 # Intelligens Redőnyvezérlő – Projekt Összefoglaló (Tinkercad demonstráció) 
 
+### Projekt leírása:
+A projekt lényege, hogy egy intelligens fényérzékelő rendszer – luxmérővel és szögérzékeléssel – automatikusan állítja a redőnyt az ideális szobai fényviszonyok érdekében, időzítés és manuális igények figyelembevételével.
+
+### Funkciók:
+-	**Időzítés**: pl. reggel 7:00 fel, napnyugta után le. 
+-	**Szobában mért fényerő**: százalékosan állítható, hogy hogyan reagáljon a fényviszonyokra. Pl: 30%-os fényerőre van állítva: ha kevesebb mint 30% fentebb húzza a redőnyt, ha több akkor lentebb. 
+-	**A napsütés beesési szöge**: Érzékelők segítségével a nap besütési szögéhez állítva tudjuk a redőny magasságát szabályozni, így sosem süt például a monitorunkba a napfény.
+-	**Manuális vezérlés**: Telefonon keresztüli vagy egyéb távirányítóval való vezérlés is lehetséges.
+
+**A funkciók mindegyike kombinálható!**
+
+### Szükséges alkatrészek:
+
+Az alkatrészek piacának jelenlegi szereplői közül választottam a számomra leghatékonyabbat ár és tudás szerint.
+
+•	**Mikrovezérlő**: ESP32 DevKit V1
+o	A többi számomra hasznossal összehasonlítva, mint például az Arduino UNO R4 WiFi, Arduino Nano, ESP8266 NodeMCU, Arduino Mega 2560, olcsóbb, gyorsabb, van Wi‑Fi, sok az analóg bemenete.
+•	**Fényérzékelés**: BH1750 szenzor
+o	MAX44009 és a BH1750 között gondolkodtam, és igazából nem kell a BH1750-nél jobb ehhez a projekthez nekem, szóval az ára miatt is elég a BH1750. Ha esetleg piaci célra kiterjeszteném, akkor ott szóba jöhet egy még pontosabb/érzékenyebb mérőeszköz vagy ha a BH1750 nem találom megfelelőnek.
+•	**Besütési szög érzékelése**: kétfajta opció létezik: szenzoros vagy szoftveres, én a szenzort választom ebben az esetben.
+o	LDR eltérő szögben. Olcsó, egyszerű, és a beesési szög logikához bőven elég információt ad.
+•	**Redőnymotor vezérlés**: 2 csatornás relé modul
+o	Olcsó, egyszerű, pont erre való – fel/le vezérléshez tökéletes.
+•	**Időzítés**: az ESP32 eléri a pontos internet időt. Ez bőven elég.
+
+### Összegezve: 
+
+| Kategória| Ajánlott alkatrész | Indok |
+|-----|---------|--------|
+| Mikrovezérlő | ESP32 DevKit V1 | olcsó, gyors, wifi, sok analóg bemenet |
+|Lux mérés | BH1750 | pontos, stabil fényerő adatok |
+|Beesési szög | 4 db LDR eltérő szögben | egyszerű és olcsó megoldás |
+|Motorvezérlés | 2 csatornás relémodul | egyenesen redőnymotorhoz való |
+|Időzítés | Internet NTP | nincs extra modul, pontos |
+
 
 ### A projekt célja
 Az eredeti rendszer ESP32-re készült volna, mivel az ESP32 képes WiFi-re, pontos internetidő (NTP) lekérésére, BH1750 luxszenzor kezelésére, valamint komplex nappozíciós számításokra. A Tinkercad azonban nem támogat ESP32-t, BH1750-et, napállás-szimulációt vagy valódi időt, ezért egy leegyszerűsített Arduino UNO alapú demonstráció készült.
