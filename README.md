@@ -36,7 +36,7 @@ o	Olcsó, egyszerű, pont erre való – fel/le vezérléshez tökéletes.
 |Időzítés | Internet NTP | nincs extra modul, pontos |
 
 
-### A projekt célja
+### Tinkercad-beli megvalósítás
 Az eredeti rendszer ESP32-re készült volna, mivel az ESP32 képes WiFi-re, pontos internetidő (NTP) lekérésére, BH1750 luxszenzor kezelésére, valamint komplex nappozíciós számításokra. A Tinkercad azonban nem támogat ESP32-t, BH1750-et, napállás-szimulációt vagy valódi időt, ezért egy leegyszerűsített Arduino UNO alapú demonstráció készült.
 
 ### A Tinkercad-es rendszer működése
