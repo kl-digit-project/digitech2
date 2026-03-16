@@ -1,4 +1,4 @@
-# Intelligens Redőnyvezérlő – Projekt Összefoglaló (Tinkercad demonstráció) 
+# Intelligens Redőnyvezérlő – Projekt Összefoglaló
 
 ### Projekt leírása:
 A projekt lényege, hogy egy intelligens fényérzékelő rendszer – luxmérővel és szögérzékeléssel – automatikusan állítja a redőnyt az ideális szobai fényviszonyok érdekében, időzítés és manuális igények figyelembevételével.
