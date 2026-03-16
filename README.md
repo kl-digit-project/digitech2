@@ -24,6 +24,7 @@ Az alkatrészek piacának jelenlegi szereplői közül választottam a számomra
   + 
 *	**Besütési szög érzékelése**: kétfajta opció létezik: szenzoros vagy szoftveres, én a szenzort választom ebben az esetben.
   + LDR eltérő szögben. Olcsó, egyszerű, és a beesési szög logikához bőven elég információt ad.
+  + 
 * **Redőnymotor vezérlés**: 2 csatornás relé modul
   + Olcsó, egyszerű, pont erre való – fel/le vezérléshez tökéletes.
 *	**Időzítés**: az ESP32 eléri a pontos internet időt. Ez bőven elég.
